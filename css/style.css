@@ -1,0 +1,39 @@
+body {
+	background-image: url("../assets/femmale3.png");
+	background-size: 95%;
+	background-color: black;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+div#center_main_box {
+	opacity: 0.8;
+	color: white;
+	border-radius: 16px;
+	background-color: #333333;
+	border-top-color: #eeeeee;
+	border-top-width: 6px;
+	border-top-style: ridge;
+	border-bottom-color: #eeeeee;
+	border-bottom-width: 6px;
+	border-bottom-style: ridge;
+	border-left-color: #666666;
+	border-left-width: 3px;
+	border-left-style: ridge;
+	border-right-color: #666666;
+	border-right-width: 3px;
+	border-right-style: ridge;
+	width: 520px;
+	height: 250px;
+	margin-top: 260px;
+	margin-left: 500px;
+	margin-right: 500px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+input {
+	border-radius: 16px;
+	background-color: #dddddd;
+}
