@@ -2,17 +2,34 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="icon" type="image/x-icon" href="../assets/logo4.ico">
 	<title>IE midterm</title>
 </head>
 <body>
 	<div id="center_main_box">
-		<h1 class="title"></h1>
-		<p>
-			hello this is a lorem ipsum.
-		</p>
-		<form>
-			<input type="text" name="name">
-		</form>
+		<div id="myform" class="subbox">
+			<h2 class="title">Mr. or Ms.?</h2>
+			
+			<form action="https://api.genderize.io/">				
+				<fieldset>
+					Name <input type="text" name="name" /><br />
+
+					<input type="radio" name="gender" value="male" />Male <br />
+					<input type="radio" name="gender" value="female" />Female <br />
+					<input type="submit" value="Submit" />
+				</fieldset>
+			</form>	
+
+		</div>
+		<div id="myprediction" class="subbox">
+			<h2>prediction</h2>
+			<h2>Saved Answer</h2>
+			answer
+			<form>
+				<input type="" name="">
+			</form>
+		</div>
+		
 	</div>
 </body>
 </html>
