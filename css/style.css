@@ -1,5 +1,5 @@
 body {
-	height: 100vh;
+	
 	background-size: 95%;
 	background-image: url("../assets/femmale3.png");	
 	background-color: black;
@@ -32,14 +32,16 @@ div#center_main_box {
 }
 
 div > div.subbox {
+	border-color: red;
+	border-width: 2px;
 	position: absolute;
 	top: 0;
-	width: 50%;
+	width: 45%;
 	height: 100%;
 }
 
-div#myprediction {
-	right: 0;
+div #myprediction {
+	left: 50%;
 }
 
 input {
@@ -48,6 +50,10 @@ input {
 	padding-right: 5px;
 
 	background-color: #dddddd;
+}
+
+input[type="text"] {
+	width: 40%;
 }
 
 .button {
