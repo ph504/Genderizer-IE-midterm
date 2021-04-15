@@ -32,8 +32,6 @@ div#center_main_box {
 }
 
 div > div.subbox {
-	border-color: red;
-	border-width: 2px;
 	position: absolute;
 	top: 0;
 	width: 45%;
