@@ -2,34 +2,37 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="icon" type="image/x-icon" href="../assets/logo4.ico">
+	<link rel="icon" type="image/x-icon" href="../assets/Sbu-logo.ico">
 	<title>IE midterm</title>
 </head>
 <body>
-	<div id="center_main_box">
-		<div id="myform" class="subbox">
-			<h2 class="title">Mr. or Ms.?</h2>
+	<div class="header-bg">
+		<div id="center_main_box">
+			<div id="myform" class="subbox">
+				<h2 class="title">Mr. or Ms.?</h2>
+				
+				<form action="https://api.genderize.io/">				
+					<fieldset>
+						Name <input type="text" name="name" /><br />
+						<br />
+						<input type="radio" name="gender" value="male" class="option" />Male <br />
+						<input type="radio" name="gender" value="female" class="option" />Female <br />
+						<br />
+						<input type="submit" value="Submit" class="button" /> 
+					</fieldset>
+				</form>	
+
+			</div>
+			<div id="myprediction" class="subbox">
+				<h2>Prediction</h2>
+				<h2>Saved Answer</h2>
+				answer
+				<form>
+					<input type="" name="">
+				</form>
+			</div>
 			
-			<form action="https://api.genderize.io/">				
-				<fieldset>
-					Name <input type="text" name="name" /><br />
-
-					<input type="radio" name="gender" value="male" />Male <br />
-					<input type="radio" name="gender" value="female" />Female <br />
-					<input type="submit" value="Submit" />
-				</fieldset>
-			</form>	
-
 		</div>
-		<div id="myprediction" class="subbox">
-			<h2>prediction</h2>
-			<h2>Saved Answer</h2>
-			answer
-			<form>
-				<input type="" name="">
-			</form>
-		</div>
-		
 	</div>
 </body>
 </html>
