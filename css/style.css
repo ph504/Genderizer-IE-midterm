@@ -3,13 +3,15 @@
 	top:0;
 	left:0;
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	background-image: url("../assets/femmale4.png");
 	background-size: 100%;
 	background-color: black;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+
+	font-size: 1vw;
 }
 
 div#center_main_box {
@@ -29,7 +31,7 @@ div#center_main_box {
 	position: relative;
 	width: 30%;
 	height: 31%;
-	top: 33%;
+	top: 35%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 30px;
@@ -53,6 +55,7 @@ input {
 	padding-right: 5px;
 
 	background-color: #dddddd;
+	font-size: 1vw;
 }
 
 input[type="text"] {
@@ -61,16 +64,35 @@ input[type="text"] {
 
 .button {
 	transition-duration: 0.5s;
-	width: 55px;
-	height: 25px;
+	width: fit-content;
+	height: fit-content;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
 }
 
 .button:hover {
 	transition-duration: 0.3s;
 	color: white;
 	background-color: black;
-	width: 80px;
-	height: 30px;
+	padding-right: 9px;
+	padding-left: 9px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+div#saved-answer {
+	border-style: dashed;
+	border-width: 2px;
+	border-radius: 16px;
+	margin-top: 10%;
+	padding-bottom: 10%;
+	background-color: #222222;
+}
+
+div.subbox > div {	
+	padding-left: 10%;	
 }
 
 fieldset {
