@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="icon" type="image/x-icon" href="../assets/Sbu-logo.ico">
+	<script type="text/javascript" src="../javascript/code.js"></script>
 	<title>IE midterm</title>
 </head>
 <body>
@@ -10,27 +11,23 @@
 		<div id="center_main_box">
 			<div id="myform" class="subbox">
 				<h2 class="title">Mr. or Ms.?</h2>
-				
-				<form action="https://api.genderize.io/">				
-					<fieldset>
-						Name <input type="text" name="name" /><br />
-						<br />
-						<input type="radio" name="gender" value="male" />Male <br />
-						<input type="radio" name="gender" value="female" />Female <br />
-						<br />
-						<input type="submit" value="Submit" class="button" />
-					</fieldset>
-				</form>	
+
+				<div class="myinput" id="name-input-box">Name <input type="text" name="name" id="name-input" /></div>							
+				<div><input type="radio" name="gender" value="male" id="male-option" />Male</div>
+				<div><input type="radio" name="gender" value="female" id="female-option" />Female</div>
+				<div class="myinput"><input type="button" value="Submit" onclick="button_pressed()" class="button" /></div>
 
 			</div>
 			<div id="myprediction" class="subbox">
 				<div>
 					<h2>Prediction</h2>
-					answer
+					<p id="pred-answer"><br/></p>
+					<p id="pred-prob"><br/></p>
 				</div>
-				<div id="saved-answer">
+				<div id="saved-answer-box">
 					<h2>Saved Answer</h2>
-					answer
+					<p id="saved-answer"><br/></p>
+					<div><input type="button" value="Clear" onclick="clear_button()" class="button" /></div>
 				</div>
 			</div>
 			
